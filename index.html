@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+      <h1><b><u>Sorting Visualizer</u></b></h1>
+
+        <div class="array-container" id="array-container"></div>
+        <div class="controls">
+            <button onclick="startSorting('bubble')">Bubble Sort</button>
+            <button onclick="startSorting('selection')">Selection Sort</button>
+            <button onclick="startSorting('insertion')">Insertion Sort</button>
+            <button onclick="startSorting('merge')">Merge Sort</button>
+            <button onclick="startSorting('quick')">Quick Sort</button>
+            <button onclick="generateNewArray()">Generate New Array</button>
+        </div>
+        <div id="description-container">
+          <h2 id="heading">Sorting Algorithm Description</h2>
+          <p id="algorithm-description">Select a sorting algorithm to see its description here.</p>
+      </div>
+      
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
